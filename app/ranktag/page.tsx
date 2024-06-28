@@ -9,8 +9,8 @@ const RankTag = () => {
         // Reset the canvas
         const canvas = canvasRef.current;
         if (canvas) {
-            const ctx = canvas.getContext('2d');
-            ctx.clearRect(0, 0, canvas.width, canvas.height)!;
+            const ctx = canvas.getContext('2d')!;
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
             const bitfont = new FontFace('bitfont', 'url(minecraft-styled-small-latin.ttf)')
         
             // Draw text on the canvas
